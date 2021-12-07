@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Herman.Base.API</name>
+    </assembly>
+    <members>
+        <member name="T:Herman.Base.API.ConfigureSwaggerOptions">
+            <summary>
+            Configures the Swagger generation options.
+            </summary>
+            <remarks>This allows API versioning to define a Swagger document per API version after the
+            <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider"/> service has been resolved from the service container.</remarks>
+        </member>
+        <member name="M:Herman.Base.API.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Herman.Base.API.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:Herman.Base.API.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.CustomResult``1(System.String,System.Int32)">
+            <summary>
+            �Զ��巵��
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.SuccessResult``1(System.String,System.Int32)">
+            <summary>
+            �ɹ�����
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.BadResult``1(System.String,System.Int32)">
+            <summary>
+            ʧ�ܷ���
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.ValidationErrorResult``1(System.String,System.Int32)">
+            <summary>
+            ������У�飩ʧ�ܷ���
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.CustomResult``1(System.String,System.Int32,``0)">
+            <summary>
+            �Զ��巵��
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <param name="data"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.CustomResult(System.String,System.Int32,System.Object)">
+            <summary>
+            �Զ��巵��
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <param name="data"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.SuccessResult``1(``0,System.String,System.Int32)">
+            <summary>
+            �ɹ�����
+            </summary>
+            <param name="data"></param>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.BadResult(System.String,System.Int32)">
+            <summary>
+            ʧ�ܷ���
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.ValidationErrorResult(System.String,System.Int32)">
+            <summary>
+            ������У�飩ʧ�ܷ���
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.NotFound``1(System.String,System.Int32)">
+            <summary>
+            404 not found
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Controllers.BaseControllerBase.NotFound(System.String,System.Int32)">
+            <summary>
+            404 not found
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper">
+            <summary>
+            用来规范Api返回model
+            </summary>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.CustomResult``1(System.String,System.Int32)">
+            <summary>
+            自定义返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.SuccessResult``1(System.String,System.Int32)">
+            <summary>
+            成功返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.BadResult``1(System.String,System.Int32)">
+            <summary>
+            失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.BadResult``2(System.String,System.Int32,System.String)">
+            <summary>
+            失败返回
+            </summary>
+            <param name="userName"></param>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.ValidationErrorResult``1(System.String,System.Int32)">
+            <summary>
+            参数（校验）失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.CustomResult``1(System.String,System.Int32,``0)">
+            <summary>
+            自定义返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.CustomResult(System.String,System.Int32,System.Object)">
+            <summary>
+            自定义返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.SuccessResult``1(``0,System.String,System.Int32)">
+            <summary>
+            成功返回
+            </summary>
+            <param name="data"></param>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.BadResult(System.String,System.Int32)">
+            <summary>
+            失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.ValidationErrorResult(System.String,System.Int32)">
+            <summary>
+            参数（校验）失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.NotFound``1(System.String,System.Int32)">
+            <summary>
+            404 not found
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.ApiResultHelper.NotFound(System.String,System.Int32)">
+            <summary>
+            404 not found
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper">
+            <summary>
+            api统一返回帮助类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.CustomResult``1(System.String,System.Int32,``0)">
+            <summary>
+            自定义返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.CustomResult(System.String,System.Int32,System.Object)">
+            <summary>
+            自定义返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.SuccessResult``1(``0,System.String,System.Int32)">
+            <summary>
+            成功返回
+            </summary>
+            <param name="data"></param>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.BadResult``1(System.String,System.Int32)">
+            <summary>
+            失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.BadResult(System.String,System.Int32)">
+            <summary>
+            失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.ValidationErrorResult``1(System.String,System.Int32)">
+            <summary>
+            参数（校验）失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.ValidationErrorResult(System.String,System.Int32)">
+            <summary>
+            参数（校验）失败返回
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.NotFound``1(System.String,System.Int32)">
+            <summary>
+            404 not found
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Herman.Base.API.Filter.ApiResult.Helper.Generic.ApiResultHelper.NotFound(System.String,System.Int32)">
+            <summary>
+            404 not found
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Herman.Base.API.Filter.ApiResult.Model.ApiResultModel`1">
+            <summary>
+            标准返回
+            </summary>
+        </member>
+        <member name="P:Herman.Base.API.Filter.ApiResult.Model.ApiResultModel`1.Status">
+            <summary>
+            状态码说明
+            </summary>
+        </member>
+        <member name="P:Herman.Base.API.Filter.ApiResult.Model.ApiResultModel`1.StatusCode">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Herman.Base.API.Filter.ApiResult.Model.ApiResultModel`1.Message">
+            <summary>
+            返回消息
+            </summary>
+        </member>
+        <member name="T:Herman.Base.API.Filter.ApiResult.Model.Generic.ApiResultModel">
+            <summary>
+            标准返回（含返回数据）
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+    </members>
+</doc>

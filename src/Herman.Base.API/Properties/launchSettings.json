@@ -1,0 +1,24 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:62114/",
+      "sslPort": 44332
+    }
+  },
+  "profiles": {
+    "Herman.Base.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "local",
+        "LocalResourceSite": "http://localhost:4200"
+      },
+      "applicationUrl": "http://localhost:4200;"
+    }
+  }
+}
+
+
+

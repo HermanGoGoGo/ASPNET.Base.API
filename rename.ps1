@@ -2,9 +2,9 @@
 $OutputEncoding = [Text.UTF8Encoding]::UTF8
 
 # company name placeholder 
-$oldCompanyName="AI5yue"
+$oldCompanyName="Herman"
 # your company name
-$newCompanyName="AI5yue"
+$newCompanyName="Herman"
 
 # project name placeholder
 $oldProjectName="Base"
@@ -78,6 +78,8 @@ function Rename {
 
 Rename -TargetFolder $slnFolder -PlaceHolderCompanyName $oldCompanyName -PlaceHolderProjectName $oldProjectName -NewCompanyName $newCompanyName -NewProjectName $newProjectName
 Rename -TargetFolder $vueFolder -PlaceHolderCompanyName $oldCompanyName -PlaceHolderProjectName $oldProjectName -NewCompanyName $newCompanyName -NewProjectName $newProjectName
+
+
 
 
 
